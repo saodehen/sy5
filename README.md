@@ -34,17 +34,19 @@
 }
 ```
 学生类
-public class Course {
+  
+     public class Course {
 	private String cno;
 	private String cname;
 	private String cnum;
 	private String dept;
 	private String teacher;
 	
-}
+      }
 添加课程
-public void insert() { 
-		String cno = tcno.getText();
+ 
+        public void insert() { 
+		 String cno = tcno.getText();
 		String cname = tcname.getText();
         String cnum = tcredit.getText();
 		String dept = cbcdept.getSelectedItem().toString();
@@ -58,14 +60,14 @@ public void insert() {
 			can.setCnum(cnum);
 			can.setDept(dept);
 			can.setTeacher(teacher);
-			String fileUrl1= "./files/course.txt";
-//			String fileUrl2= "./files/"+"*"+"/kexuan.txt";
+			 String fileUrl1= "./files/course.txt";
+			String fileUrl2= "./files/"+"*"+"/kexuan.txt";
 			FileUtil.FileExistTest(fileUrl1);
-//			FileUtil.FileExistTest(fileUrl2);
+			FileUtil.FileExistTest(fileUrl2);
 			
 			Boolean flag1 = FileUtil.addSelected(can,fileUrl1);
-//			Boolean flag2 = FileUtil.addSelected(can,fileUrl2);
-			if (flag1==true) {
+			        Boolean flag2 = FileUtil.addSelected(can,fileUrl2);
+			  if (flag1==true) {
 				JOptionPane.showMessageDialog(null, "增加成功！");
 				listener.refreshUI();
 				setVisible(false);
@@ -76,7 +78,7 @@ public void insert() {
     
     选课写入
 
-public void getNotSelected(){
+      public void getNotSelected(){
 
 		String fileUrl= "./files/"+LoginFrame.loginName+"/kexuan.txt";
 		FileUtil.FileExistTest(fileUrl);
@@ -93,9 +95,9 @@ public void getNotSelected(){
   
   退课 
   
-  public void dropCourse(){
+      public void dropCourse(){
 		int rowNotSelected = -1,rowSelected=-1;
-		rowNotSelected = tableNotSelected.getSelectedRow();
+		 rowNotSelected = tableNotSelected.getSelectedRow();
 		rowSelected =tableSelected.getSelectedRow();
 		if (rowNotSelected == -1 && rowSelected == -1) {
 			JOptionPane.showMessageDialog(null, "请选择要退的课程！");
@@ -130,12 +132,20 @@ public void getNotSelected(){
   
  流程图
  ===============
- ![]()
-  ![]()
-   ![]()
-    ![]()
-     ![]()
- 实验心得：
+
+![]()
+  
+ 结果图
+ ================
+   
+![]()
+![]() 
+![]()
+![]()
+
+
+
+实验心得：
  学习Java，信心，恒心，毅力是最重要的。这是我们必须具备的心理素质。要是学习这门语言开始的时候很有兴趣，遇到苦难就退缩，
  这样最终会放弃学习java，没有经历风雨怎么见彩虹。编程就是有的时候就是那么这么人。会遇到很多的困惑。但是一旦你
  弄懂了，或者是你把问题解决了，你会感到很兴奋，编程的快乐就在此 了。多看看一些资料，多多的向高手请教，这样才好。
