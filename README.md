@@ -133,16 +133,20 @@
  流程图
  ===============
 
-![]()
+![1](https://github.com/saodehen/sy5/blob/master/lct.png)
   
  结果图
  ================
    
-![]()
-![]() 
-![]()
-![]()
-
+![2](https://github.com/saodehen/sy5/blob/master/dl.png)
+![3](https://github.com/saodehen/sy5/blob/master/kcxx.png) 
+![4](https://github.com/saodehen/sy5/blob/master/tj.png)
+![5](https://github.com/saodehen/sy5/blob/master/tjkc.png)
+![12](https://github.com/saodehen/sy5/blob/master/tjxs.png)
+![11](https://github.com/saodehen/sy5/blob/master/tk.png)
+![13](https://github.com/saodehen/sy5/blob/master/xk.png)
+![14](https://github.com/saodehen/sy5/blob/master/xx.png)
+![14](https://github.com/saodehen/sy5/blob/master/zc.png)
 
 
 实验心得：
